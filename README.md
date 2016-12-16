@@ -1,3 +1,10 @@
+[![npm](https://img.shields.io/npm/l/html-inline-source-webpack-plugin.svg?style=flat-square)](https://www.npmjs.org/package/html-inline-source-webpack-plugin)
+[![npm](https://img.shields.io/npm/v/html-inline-source-webpack-plugin.svg?style=flat-square)](https://www.npmjs.org/package/html-inline-source-webpack-plugin)
+[![npm](https://img.shields.io/npm/dm/html-inline-source-webpack-plugin.svg?style=flat-square)](https://www.npmjs.org/package/html-inline-source-webpack-plugin)
+[![bitHound Overall Score](https://www.bithound.io/github/lixinliang/html-inline-source-webpack-plugin/badges/score.svg)](https://www.bithound.io/github/lixinliang/html-inline-source-webpack-plugin)
+[![bitHound Dependencies](https://www.bithound.io/github/lixinliang/html-inline-source-webpack-plugin/badges/dependencies.svg)](https://www.bithound.io/github/lixinliang/html-inline-source-webpack-plugin/master/dependencies/npm)
+[![bitHound Code](https://www.bithound.io/github/lixinliang/html-inline-source-webpack-plugin/badges/code.svg)](https://www.bithound.io/github/lixinliang/html-inline-source-webpack-plugin)
+
 
 # html-inline-source-webpack-plugin
 
