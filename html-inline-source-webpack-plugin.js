@@ -28,11 +28,15 @@ function inline ( file, option ) {
     fs.writeFileSync(file, inlineSource.sync(file, option));
 }
 
-function HtmlInlineSourceWebpackPlugin ( configs ) {
+function HtmlInlineSourceWebpackPlugin ( configs, callback ) {
     if (!(this instanceof HtmlInlineSourceWebpackPlugin)) {
         throw 'Cannot call HtmlInlineSourceWebpackPlugin as a function.';
     }
-    if (typeof configs !== 'object') {
+    if (typeof configs == 'function') {
+        callback = configs;
+        configs = {};
+    }
+    if (typeof configs != 'object') {
         configs = {};
     }
     if (configs instanceof Array) {
@@ -40,11 +44,17 @@ function HtmlInlineSourceWebpackPlugin ( configs ) {
     } else {
         this.configs = [configs];
     }
+    if (typeof callback == 'function') {
+        this.callback = callback;
+    } else {
+        this.callback = function () {};
+    }
 }
 
 HtmlInlineSourceWebpackPlugin.prototype.apply = function ( compiler ) {
     var configs = this.configs;
     var length = configs.length;
+    var callback = this.callback;
     compiler.plugin('done', function ( stats ) {
         var compiler = stats.compilation.compiler;
         var outputPath = path.join(compiler.context, compiler.outputPath);
@@ -93,6 +103,7 @@ HtmlInlineSourceWebpackPlugin.prototype.apply = function ( compiler ) {
                 }
             }
         });
+        callback();
     });
 };
 
