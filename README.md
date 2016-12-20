@@ -10,6 +10,12 @@
 
 > 🔧A webpack plugin to inline source in html, wrapper of inline-source.
 
+### Env
+
+* Node - v4.7.0
+* npm - 2.15.11
+* webpack - ^1.14.0
+
 ## Install
 
 ```shell
@@ -110,6 +116,20 @@ new HtmlInlineSourceWebpackPlugin([
 #### More option
 
 see [here](https://github.com/popeindustries/inline-source#usage).
+
+#### Callback
+
+```js
+new HtmlInlineSourceWebpackPlugin(function () {
+    console.log('inline source done!');
+})
+/* or */
+new HtmlInlineSourceWebpackPlugin({
+    /* option */
+}, function () {
+    console.log('inline source done!');
+})
+```
 
 ## Related
 
