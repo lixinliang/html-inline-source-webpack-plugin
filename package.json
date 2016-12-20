@@ -1,6 +1,6 @@
 {
   "name": "html-inline-source-webpack-plugin",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "🔧A webpack plugin to inline source in html, wrapper of inline-source.",
   "main": "./html-inline-source-webpack-plugin.js",
   "scripts": {},
