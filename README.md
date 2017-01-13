@@ -16,10 +16,10 @@
 * npm - 2.15.11
 * webpack - ^1.14.0
 
-## Install
+## Installation
 
-```shell
-$ npm install html-inline-source-webpack-plugin --save-dev
+```
+$ npm install --save-dev html-inline-source-webpack-plugin
 ```
 
 ## Usage
