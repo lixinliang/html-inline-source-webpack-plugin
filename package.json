@@ -25,6 +25,6 @@
     "url": "https://github.com/lixinliang/html-inline-source-webpack-plugin/issues"
   },
   "dependencies": {
-    "inline-source": "^5.1.2"
+    "inline-source": "^6.2.0"
   }
 }
